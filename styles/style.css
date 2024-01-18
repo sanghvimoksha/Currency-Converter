@@ -1,0 +1,137 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    top: 0;
+    left: 0;
+    box-sizing: border-box;
+}
+
+::slection{
+    background-color: purple;
+    color: white;
+}
+
+body{
+    height: 100vh;
+    padding: 0 10px;
+    background-color: purple;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.container{
+   width: 370px;
+   background-color: white;
+   padding: 30px;
+   border-radius: 5px;
+   box-shadow: 7px 7px 20px rgba(0, 0, 0, 0.01);
+}
+
+.container header{
+    font-size: 22px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    font-weight: bold;
+}
+
+.container form{
+    margin: 40px 0 20px 0;
+}
+
+.container form input,
+.container form select,
+.container form button{
+    width: 100%;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+}
+
+.container form p{
+    font-size: 15px;
+    margin-bottom: 5px;
+
+}
+
+.container form input{
+    height: 50px;
+    padding: 0 15px;
+    border: 1px solid #999;
+    font: 17px;
+}
+
+.container form input:focus{
+    border: 2px solid purple;
+    padding: 0 14px;
+}
+
+.container form .drop-list{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.container form .drop-list .select-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 115px;
+    height: 45px;
+    border: 1px solid #999;
+}
+
+.container .drop-list .icon{
+    font-size: 22px;
+    margin-top: 30px;
+    cursor: pointer;
+}
+
+.container form .drop-list .select-box img{
+    width: 21px;
+}
+
+.container form .drop-list .select-box select{
+    width: auto;
+    font-size: 16px;
+    background: none;
+    margin: 0 -5px 0 5px;
+} 
+
+.container form .drop-list .select-box select::-webkit-scrollbar{
+    width: 8px;
+}
+
+.container form .drop-list .select-box select::-webkit-scrollbar-track{
+    background: white;
+}
+
+.container form .drop-list .select-box select::-webkit-scrollbar-thumb{
+    background: #888;
+    border-radius: 5px;
+    border-right: 2px solid white;
+}
+
+.container form .exchange-rate{
+  font-size: 16px;
+  margin: 20px 0 30px;
+}
+
+.container form button{
+    height: 52px;
+    background-color: purple;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 17px;
+}
+
+.container form button:hover{
+    background: transparent;
+    color: purple;
+    border: 2px solid purple;
+}
